@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace为BaseDao.java的全类名-->
+<mapper namespace="com.jones.dao.DepartDao">
+
+    <delete id="delDeptUserRes">
+        delete from t_user_dep
+        where uid=#{id}
+    </delete>
+    <select id="selectAllByPage" resultType="com.jones.model.Depart">
+        select id,departname
+        from t_depart
+    </select>
+</mapper>

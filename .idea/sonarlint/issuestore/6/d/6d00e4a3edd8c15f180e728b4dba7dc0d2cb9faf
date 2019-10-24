@@ -1,0 +1,5 @@
+
+\squid:UselessImportCheck"1Remove this unused import 'com.jones.model.Role'.(æàè¼8Äì—½ß-
+¶%squid:RedundantThrowsDeclarationCheck'"yRemove the declaration of thrown exception 'org.apache.shiro.authc.AuthenticationException' which is a runtime exception.(¡ïË»ùÿÿÿÿ8Ò‡“¯ß-
+zsquid:S14882"\Immediately return this expression instead of assigning it to the temporary variable "Info".(ËŞğ8Ò‡“¯ß-
+psquid:S001172"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ËŞğ8Ò‡“¯ß-

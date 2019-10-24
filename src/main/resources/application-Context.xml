@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:mybatis-spring="http://mybatis.org/schema/mybatis-spring"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/mvc
+       http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop.xsd
+       http://www.springframework.org/schema/tx
+       http://www.springframework.org/schema/tx/spring-tx.xsd http://mybatis.org/schema/mybatis-spring http://mybatis.org/schema/mybatis-spring.xsd">
+
+    <context:component-scan base-package="com.jones">
+        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+        <context:exclude-filter type="annotation" expression="org.springframework.web.bind.annotation.ControllerAdvice"/>
+    </context:component-scan>
+
+    <!-- 加载数据库属性文件 -->
+    <context:property-placeholder location="classpath:db.properties"/>
+    <!-- 连接池 -->
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <property name="driverClass" value="${datasource.connection.driver_class}"/>
+        <!-- 属性中的名称不能和name名称一样 -->
+        <property name="jdbcUrl" value="${datasource.connection.url}"/>
+        <property name="user" value="${datasource.connection.username}"/>
+        <property name="password" value="${datasource.connection.password}"/>
+        <property name="acquireIncrement" value="${datasource.connection.acquireIncrement}"/>
+        <property name="initialPoolSize" value="${datasource.connection.initialPoolSize}" />
+        <property name="minPoolSize" value="${datasource.connection.minPoolSize}" />
+        <property name="maxPoolSize" value="${datasource.connection.maxPoolSize}" />
+        <property name="maxStatements" value="${datasource.connection.maxStatements}"/>
+        <property name="maxStatementsPerConnection" value="${datasource.connection.maxStatementsPerConnection}"/>
+    </bean>
+    <!-- 配置事务管理器 -->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <!-- 数据源 -->
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+    <!-- 配置事务属性 -->
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            <tx:method name="get*" read-only="true"/>
+            <tx:method name="load*" read-only="true"/>
+            <tx:method name="find*" read-only="true"/>
+            <tx:method name="select*" read-only="true"/>
+            <tx:method name="*" read-only="false"/>
+        </tx:attributes>
+    </tx:advice>
+    <!--事务的切入点 -->
+    <aop:config>
+        <aop:pointcut id="txPointcut" expression="execution(* com.jones.service.*.*(..))"/>
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="txPointcut"/>
+    </aop:config>
+    <!-- 开启注解事务 -->
+    <tx:annotation-driven transaction-manager="transactionManager"/>
+    <!-- Mybatis的工厂 -->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <!-- 核心配置文件的位置 -->
+        <property name="configLocation" value="classpath:sqlMapConfig.xml"/>
+        <property name="mapperLocations" value="classpath:com/jones/mapper/*.xml"/>
+    </bean>
+    <mybatis-spring:scan base-package="com.jones.dao"/>
+
+    <!-- shiro的配置  -->
+    <bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+        <property name="cacheManager" ref="cacheManager" />
+        <property name="realm" ref="jdbcRealm" />
+    </bean>
+    <!-- 配置ehcache缓存bean -->
+    <bean id="cacheManager" class="org.apache.shiro.cache.ehcache.EhCacheManager">
+        <property name="cacheManagerConfigFile" value="classpath:ehcache.xml"></property>
+    </bean>
+    <!--  配置Realm  -->
+    <bean id="jdbcRealm" class="com.jones.shiro.ShiroRealm"/>
+    <!--  shiro的拦截规则  -->
+    <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+        <property name="securityManager" ref="securityManager"/>
+        <!--  登录的页面,没有登录的情况下访问需要登录认证后才能访问的页面  -->
+        <property name="loginUrl" value="/login.html"/>
+        <!--  登录成功后跳转到的页面      -->
+        <property name="successUrl" value="/index.html"/>
+        <!--  访问了要求有权限控制的页面,但是没有该权限,跳转到的页面      -->
+        <property name="unauthorizedUrl" value="/unauthorizedUrl.html"/>
+        <!--  设置拦截规则 规则是有顺序的,从上到下,拦截的范围必须是从小到大  -->
+        <property name="filterChainDefinitions">
+            <value>
+                /login.jsp = anon
+                /logout.html = logout
+<!--                                /index/diaryCount.html = roles[chairman,gm,dgm]-->
+                /admin/** = authc
+                /** = anon
+            </value>
+        </property>
+    </bean>
+</beans>

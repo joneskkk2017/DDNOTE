@@ -1,0 +1,93 @@
+{
+  "id": "1362929",
+  "name": "myIcon",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "577315",
+      "name": "减号",
+      "font_class": "jianhao",
+      "unicode": "e729",
+      "unicode_decimal": 59177
+    },
+    {
+      "icon_id": "1203690",
+      "name": "头像",
+      "font_class": "xiugaitouxiang",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "1418222",
+      "name": "日历",
+      "font_class": "rili",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "1489077",
+      "name": "电源",
+      "font_class": "dianyuan",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    },
+    {
+      "icon_id": "2077715",
+      "name": "用户",
+      "font_class": "yonghu",
+      "unicode": "e646",
+      "unicode_decimal": 58950
+    },
+    {
+      "icon_id": "5881141",
+      "name": "部门",
+      "font_class": "bumen",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "6076920",
+      "name": "减",
+      "font_class": "reduce",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    },
+    {
+      "icon_id": "6237070",
+      "name": "竖线",
+      "font_class": "tubiaozhizuo-",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "6297010",
+      "name": "系统管理",
+      "font_class": "xitongguanli",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "6691793",
+      "name": "加号",
+      "font_class": "jiahao",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "7712242",
+      "name": "员工",
+      "font_class": "yuangong",
+      "unicode": "e72e",
+      "unicode_decimal": 59182
+    },
+    {
+      "icon_id": "8802631",
+      "name": "系统",
+      "font_class": "xitong",
+      "unicode": "e648",
+      "unicode_decimal": 58952
+    }
+  ]
+}

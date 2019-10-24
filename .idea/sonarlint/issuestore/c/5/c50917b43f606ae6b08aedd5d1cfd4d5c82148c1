@@ -1,0 +1,17 @@
+
+Hsquid:S1481O"*Remove this unused "pager" local variable.(ĞóØˆ8ÍÉ“°ß-
+Hsquid:S1481["*Remove this unused "pager" local variable.(ÑÂ“”8ÍÉ“°ß-
+Wsquid:S18547"9Remove this useless assignment to local variable "pager".(ĞóØˆ8ÍÉ“°ß-
+Wsquid:S1854g"9Remove this useless assignment to local variable "pager".(ÑÂ“”8ÍÉ“°ß-
+squid:S1488k"\Immediately return this expression instead of assigning it to the temporary variable "info".(êÁ”éùÿÿÿÿ8ÍÉ“°ß-
+Hsquid:S1481g"*Remove this unused "pager" local variable.(ÑÂ“”8ÍÉ“°ß-
+msquid:S3252["OUse static access with "com.github.pagehelper.page.PageMethod" for "startPage".(ÑÂ“”8ÍÉ“°ß-
+msquid:S3252g"OUse static access with "com.github.pagehelper.page.PageMethod" for "startPage".(ÑÂ“”8ÍÉ“°ß-
+Wsquid:S1854["9Remove this useless assignment to local variable "pager".(ÑÂ“”8ÍÉ“°ß-
+msquid:S32527"OUse static access with "com.github.pagehelper.page.PageMethod" for "startPage".(ĞóØˆ8ÍÉ“°ß-
+squid:S1488_"\Immediately return this expression instead of assigning it to the temporary variable "info".(êÁ”éùÿÿÿÿ8ÍÉ“°ß-
+msquid:S3252O"OUse static access with "com.github.pagehelper.page.PageMethod" for "startPage".(ĞóØˆ8ÍÉ“°ß-
+Wsquid:S1854O"9Remove this useless assignment to local variable "pager".(ĞóØˆ8ÍÉ“°ß-
+Hsquid:S14817"*Remove this unused "pager" local variable.(ĞóØˆ8ÍÉ“°ß-
+squid:S1488;"\Immediately return this expression instead of assigning it to the temporary variable "info".(…™È‰ıÿÿÿÿ8ÍÉ“°ß-
+squid:S1488S"\Immediately return this expression instead of assigning it to the temporary variable "info".(…™È‰ıÿÿÿÿ8ÍÉ“°ß-

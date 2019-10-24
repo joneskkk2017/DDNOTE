@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace为BaseDao.java的全类名-->
+<mapper namespace="com.jones.dao.DiaryDao">
+    <insert id="Datesave">
+        insert into t_datedate (datesave) values (#{diaryDate})
+    </insert>
+    <update id="updateReadalbe">
+        update t_diary set readable = 1 where id=#{id}
+    </update>
+    <update id="updateClick">
+        update t_diary set clickcount = #{click} where id=#{id}
+    </update>
+    <update id="updateLookman">
+        update t_diary set lookman = concat(lookman,#{uname}) where id=#{id}
+    </update>
+    <update id="updateLookmanClick">
+        update t_diary set lookman=#{uuname},clickcount=#{click} where id=#{id}
+    </update>
+
+    <select id="selectDiaryByUid" resultType="com.jones.model.Diary">
+        select * from t_diary where uuuid=#{uuuid} order by add_date desc
+    </select>
+    <select id="selectDiaryByDate" resultType="com.jones.model.Diary">
+        SELECT * FROM t_diary where uuuid=#{id} and DATE_FORMAT(add_date,'%Y-%m') = #{diaryDate} order by add_date desc
+    </select>
+    <select id="selectCountDiary" resultType="com.jones.model.DiaryCount">
+select aa.id,aa.username, IFNULL(bb.rptNum,0) rptNum,diarydate,aa.name
+from (select us.*,r.name from t_user us,t_role r,t_user_role ur where us.id=ur.uid and r.id=ur.rid) aa
+left join
+(SELECT u.id, u.username,DATE_FORMAT(d.add_date,'%Y-%m') diarydate,count(0) rptNum
+from t_user u
+right JOIN t_diary d
+on u.id=d.uuuid
+where DATE_FORMAT(d.add_date,'%Y-%m') = #{diaryDate}
+GROUP BY DATE_FORMAT(d.add_date,'%Y-%m'),u.id,u.username) bb
+on  aa.id=bb.id
+where name not in  ('董事长','超级管理员')
+    </select>
+    <select id="selectCountDiaryByPage" resultType="com.jones.model.DiaryCount">
+select aa.id,aa.username, IFNULL(bb.rptNum,0) rptNum,diarydate,aa.name
+from (select us.*,r.name from t_user us,t_role r,t_user_role ur where us.id=ur.uid and r.id=ur.rid) aa
+left join
+(SELECT u.id, u.username,DATE_FORMAT(d.add_date,'%Y-%m') diarydate,count(0) rptNum
+from t_user u
+right JOIN t_diary d
+on u.id=d.uuuid
+GROUP BY DATE_FORMAT(d.add_date,'%Y-%m'),u.id,u.username) bb
+on  aa.id=bb.id
+where name not in  ('董事长','超级管理员')
+    </select>
+    <select id="selectNewDate" resultType="java.lang.String">
+        select datesave from t_datedate order by id desc LIMIT 0,1
+    </select>
+</mapper>

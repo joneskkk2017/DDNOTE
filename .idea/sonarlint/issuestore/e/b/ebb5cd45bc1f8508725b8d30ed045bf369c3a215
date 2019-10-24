@@ -1,0 +1,7 @@
+
+ksquid:S1192"HDefine a constant instead of duplicating this literal "unknown" 7 times.(í¾þèÿÿÿÿÿ8‚Ùð ß-
+esquid:S22593"BA "NullPointerException" could be thrown; "inet" is nullable here.(¾¤¿‹üÿÿÿÿ8‚Ùð ß-
+Fsquid:S11481"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8‚Ùð ß-
+Xsquid:S1118":Add a private constructor to hide the implicit public one.(í´ù×8‚Ùð ß-
+osquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 26 to the 15 allowed.(Àõç<8‚Ùð ß-
+Lsquid:S1905$")Remove this unnecessary cast to "String".(ÆÜ›•ûÿÿÿÿ8‚Ùð ß-

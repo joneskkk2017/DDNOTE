@@ -1,0 +1,5 @@
+
+squid:S1488+"\Immediately return this expression instead of assigning it to the temporary variable "info".(í‹®ùÿÿÿÿ8ßÄ‘°ß-
+Wsquid:S1854)"9Remove this useless assignment to local variable "pager".(çìæÅ8ßÄ‘°ß-
+msquid:S3252)"OUse static access with "com.github.pagehelper.page.PageMethod" for "startPage".(çìæÅ8ßÄ‘°ß-
+Hsquid:S1481)"*Remove this unused "pager" local variable.(çìæÅ8ßÄ‘°ß-

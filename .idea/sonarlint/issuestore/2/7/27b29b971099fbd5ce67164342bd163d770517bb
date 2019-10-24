@@ -1,0 +1,18 @@
+
+nsquid:S3252Å"OUse static access with "com.github.pagehelper.page.PageMethod" for "startPage".(Ë§Í8ôÏ˜°ß-
+Nsquid:S1481"*Remove this unused "pager" local variable.(ú’†íúÿÿÿÿ8ôÏ˜°ß-
+msquid:S3252`"OUse static access with "com.github.pagehelper.page.PageMethod" for "startPage".(Ë§Í8ôÏ˜°ß-
+Hsquid:S1481`"*Remove this unused "pager" local variable.(Ë§Í8ôÏ˜°ß-
+Xsquid:S1854Å"9Remove this useless assignment to local variable "pager".(Ë§Í8ôÏ˜°ß-
+Isquid:S1481Å"*Remove this unused "pager" local variable.(Ë§Í8ôÏ˜°ß-
+Wsquid:S1854`"9Remove this useless assignment to local variable "pager".(Ë§Í8ôÏ˜°ß-
+{squid:S1488Ç"\Immediately return this expression instead of assigning it to the temporary variable "info".(ÎÈúç8ôÏ˜°ß-
+{squid:S1488ƒ"\Immediately return this expression instead of assigning it to the temporary variable "info".(ºÓ•Ï8ôÏ˜°ß-
+fsquid:S00112Ö"FDefine and throw a dedicated exception instead of using a generic one.(ëç‹‰8ôÏ˜°ß-
+]squid:S1854"9Remove this useless assignment to local variable "pager".(ú’†íúÿÿÿÿ8ôÏ˜°ß-
+ssquid:S3252"OUse static access with "com.github.pagehelper.page.PageMethod" for "startPage".(ú’†íúÿÿÿÿ8ôÏ˜°ß-
+Ksquid:S1481"(Remove this unused "uid" local variable.(Ÿ„Áúÿÿÿÿ8ôÏ˜°ß-
+Zsquid:S1854"7Remove this useless assignment to local variable "uid".(Ÿ„Áúÿÿÿÿ8ôÏ˜°ß-
+isquid:S1192C"KDefine a constant instead of duplicating this literal "t_user_dep" 4 times.(ÀÄöË8ôÏ˜°ß-
+zsquid:S1488b"\Immediately return this expression instead of assigning it to the temporary variable "info".(ÎÈúç8ôÏ˜°ß-
+osquid:S1192D"LDefine a constant instead of duplicating this literal "t_user_area" 4 times.(‰ ş¿øÿÿÿÿ8ôÏ˜°ß-

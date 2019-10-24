@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace为BaseDao.java的全类名-->
+<mapper namespace="com.jones.dao.UserDao">
+    <update id="updateUserPassword">
+        update t_user
+         set password = #{trim}
+         where id=#{id}
+    </update>
+    <select id="getUserByName" resultType="com.jones.model.User">
+        SELECT * FROM t_user u where u.username=#{username}
+    </select>
+    <select id="selectRelevanceUsers" resultMap="UserRelRoleMap">
+        select u.id,u.username,u.password,u.telephone,enable
+        from t_user u
+    </select>
+    <select id="getRoleByUid" resultType="com.jones.model.Role">
+        select r.id,r.name,r.code,r.idpath
+        from t_role r,t_user_role ur
+        where ur.rid=r.id
+        and
+            ur.uid=#{id}
+    </select>
+    <select id="getDeptByUid" resultType="com.jones.model.Depart">
+        select dep.id,dep.departname
+        from t_depart dep,t_user_dep ud
+        where ud.depid=dep.id
+        and
+            ud.uid=#{id}
+    </select>
+    <select id="getAreaByUid" resultType="com.jones.model.Area">
+        select ar.id,ar.areaname
+        from t_area ar,t_user_area ua
+        where ua.areaid=ar.id
+        and
+            ua.uid=#{id}
+    </select>
+    <select id="getUserByUid" resultMap="UserRelRoleMap">
+        select u.id,u.username,u.password,u.telephone,enable
+        from t_user u
+        where
+            u.id=#{id}
+    </select>
+    <select id="selectUsersBySearch" resultMap="UserRelRoleMap">
+        select u.id,u.username,u.password,u.telephone,enable
+        from t_user u
+        where
+            u.username like #{userInfo}
+    </select>
+    <select id="selectUserByUsername" resultType="com.jones.model.User">
+        select * from t_user
+        where username=#{username}
+    </select>
+    <select id="getLogRoleByUid" resultType="com.jones.model.Role">
+        select r.id,r.name,r.code,r.idpath
+        from t_role r,t_user_role ur
+        where ur.rid=r.id
+        and
+            ur.uid=#{id}
+    </select>
+    <select id="getUsersByRidpath" resultType="com.jones.model.UserResult">
+        select b.id userid,b.username,c.id roleid,c.code rolecode,c.name rolename,c.idpath rolepath,e.id areaid,e.areaname
+        from t_user_role a ,t_user b,t_role c,t_user_area d,t_area e
+        where a.uid =b.id
+        and a.rid=c.id
+        and b.id=d.uid
+        and d.areaid =e.id
+        and  c.idpath
+        like #{idpath}
+    </select>
+    <select id="selectDiaryByUidByDate" resultType="com.jones.model.Udiary">
+        SELECT u.id uid,u.username,d.id diaryid,d.diarytitle,d.diarycontent,d.add_date adddate
+        FROM t_diary d,t_user u
+        where d.uuuid = u.id
+        and DATE_FORMAT(d.add_date,'%Y-%m-%d') = #{dateInfo}
+        and u.username = #{userInfo}
+    </select>
+    <resultMap id="UserRelRoleMap" type="com.jones.model.User">
+        <id column="id" property="id" />
+        <result column="username" property="username"/>
+        <result column="password" property="password"/>
+        <result column="telephone" property="telephone"/>
+        <result column="enable" property="enable"/>
+        <collection property="department" select="com.jones.dao.UserDao.getDeptByUid" column="id">
+        </collection>
+        <collection property="area" select="com.jones.dao.UserDao.getAreaByUid" column="id">
+        </collection>
+        <collection property="roles" select="com.jones.dao.UserDao.getRoleByUid" column="id">
+        </collection>
+    </resultMap>
+    <!--    <resultMap id="RoleResMap" type="com.jones.model.Role">-->
+    <!--        <id column="rid" property="id" />-->
+    <!--        <result column="name" property="name" />-->
+    <!--        <result column="code" property="code" />-->
+    <!--        <collection property="resources" ofType="com.jones.model.Resource">-->
+    <!--            <id column="resid" property="id" />-->
+    <!--            <result column="path" property="path" />-->
+    <!--        </collection>-->
+    <!--    </resultMap>-->
+</mapper>

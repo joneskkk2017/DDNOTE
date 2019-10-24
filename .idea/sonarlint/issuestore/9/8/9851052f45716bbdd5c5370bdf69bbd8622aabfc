@@ -1,0 +1,9 @@
+
+qsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(œ¯èÎýÿÿÿÿ8þ¾£°ß-
+hsquid:S4488O"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(ÅûÿÄ8—Ÿ£°ß-
+fsquid:S4488."HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ôùé8—Ÿ£°ß-
+\squid:S3752">Add a "method" parameter to this "@RequestMapping" annotation.(ÚÇ½Ô8—Ÿ£°ß-
+[
+squid:S106Q"9Replace this use of System.out or System.err by a logger.(ÄÂ¸Õýÿÿÿÿ8—Ÿ£°ß-
+ˆsquid:S1192#"eDefine a constant instead of duplicating this literal "redirect:/admin/resourceManager.html" 3 times.(´¶Àƒùÿÿÿÿ8—Ÿ£°ß-
+esquid:S4488\"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(«ï¶.8—Ÿ£°ß-

@@ -1,0 +1,41 @@
+
+\
+squid:S106"9Replace this use of System.out or System.err by a logger.(Õ‚ÈÌúÿÿÿÿ8Ü„¡°ß-
+asquid:S3752H">Add a "method" parameter to this "@RequestMapping" annotation.(ÌÆ™Ãûÿÿÿÿ8Ü„¡°ß-
+osquid:CommentedOutCodeLineË"<This block of commented-out lines of code should be removed.(Ÿ§¿¨úÿÿÿÿ8Ü„¡°ß-
+Xsquid:S4973º"9Use the "equals" method if value comparison was intended.(‚µÌÌ8Ü„¡°ß-
+jsquid:CommentedOutCodeLineÔ"<This block of commented-out lines of code should be removed.(ŒñÛ¿8Ü„¡°ß-
+osquid:CommentedOutCodeLineú"<This block of commented-out lines of code should be removed.(Ìå¶úıÿÿÿÿ8Ü„¡°ß-
+ssquid:S00100Ç"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô¥¦©ÿÿÿÿÿ8Ü„¡°ß-
+bsquid:S3752ş">Add a "method" parameter to this "@RequestMapping" annotation.(’Ú³–üÿÿÿÿ8Ü„¡°ß-
+V
+squid:S106J"9Replace this use of System.out or System.err by a logger.(Úÿõ†8¹—Š´ß-
+ssquid:S00100‡"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÈØï‘üÿÿÿÿ8Ü„¡°ß-
+]squid:S3752­">Add a "method" parameter to this "@RequestMapping" annotation.(§Àƒ8Ü„¡°ß-
+osquid:CommentedOutCodeLineğ"<This block of commented-out lines of code should be removed.(¤åµÉşÿÿÿÿ8Ü„¡°ß-
+\
+squid:S106…"9Replace this use of System.out or System.err by a logger.(èÚßøÿÿÿÿ8Ü„¡°ß-
+\
+squid:S106¡"9Replace this use of System.out or System.err by a logger.(Õ‚ÈÌúÿÿÿÿ8Ü„¡°ß-
+Nsquid:S1066™"/Merge this if statement with the enclosing one.(¡ä’Ê8Ü„¡°ß-
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(ÃùÇ¹ûÿÿÿÿ8ßíü·ß-
+osquid:S1192×"QDefine a constant instead of duplicating this literal "index/diaryCount" 3 times.(»ç®z8Ü„¡°ß-
+osquid:CommentedOutCodeLineÖ"<This block of commented-out lines of code should be removed.(Ìå¶úıÿÿÿÿ8Ü„¡°ß-
+hsquid:S1192U"JDefine a constant instead of duplicating this literal "diaryList" 3 times.(î—Úé8Ü„¡°ß-
+asquid:S3752=">Add a "method" parameter to this "@RequestMapping" annotation.(êäÿßüÿÿÿÿ8Ü„¡°ß-
+bsquid:S3752Æ">Add a "method" parameter to this "@RequestMapping" annotation.(À›äğşÿÿÿÿ8Ü„¡°ß-
+jsquid:CommentedOutCodeLineÉ"<This block of commented-out lines of code should be removed.(…Â…8Ü„¡°ß-
+osquid:CommentedOutCodeLineÜ"<This block of commented-out lines of code should be removed.(ì…æŠüÿÿÿÿ8Ü„¡°ß-
+jsquid:CommentedOutCodeLineë"<This block of commented-out lines of code should be removed.(˜»üŞ8Ü„¡°ß-
+asquid:S3752%">Add a "method" parameter to this "@RequestMapping" annotation.(ŞÅü‹şÿÿÿÿ8Ü„¡°ß-
+jsquid:CommentedOutCodeLineò"<This block of commented-out lines of code should be removed.(ª™ú8Ü„¡°ß-
+]squid:S4973‚"9Use the "equals" method if value comparison was intended.(˜…° úÿÿÿÿ8Ü„¡°ß-
+Hsquid:S1125")Remove the literal "false" boolean value.(ñ¬Â8øì·Êß-
+Hsquid:S1125")Remove the literal "false" boolean value.(ñ¬Â8é¥™Èß-
+\
+squid:S106"9Replace this use of System.out or System.err by a logger.(ìãªÑÿÿÿÿÿ8‘¢±Êß-
+W
+squid:S106˜"9Replace this use of System.out or System.err by a logger.(ã¥‡Ú8Ü„¡°ß-
+gsquid:S4488†"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(‰İïÃ8Ü„¡°ß-
+qsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(™Ü´úúÿÿÿÿ8Ü„¡°ß-

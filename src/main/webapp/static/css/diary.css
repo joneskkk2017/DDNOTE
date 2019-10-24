@@ -1,0 +1,87 @@
+/* 全局通用样式*/
+input,
+input:focus{
+    border:1px #ccc solid !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.btn:focus,
+.btn.active:focus,
+.btn:active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus{
+    outline:none !important;
+    box-shadow:none !important;
+}
+
+.search_title_bar{
+    height: 39px;
+    background: #031F8D;
+    margin-right: 10px;
+    margin-top:10px;
+    color: #fff;
+    line-height: 39px;
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+#search1{
+    float: left;
+}
+
+#search_form{
+    margin-top: 10px;
+}
+
+#search_btn{
+    margin-left:224px;
+    margin-top: 10px;
+}
+
+#test1{
+    margin-right: 8px;
+}
+#search_btn >button,
+#pager > div >button{
+    height: 30px;
+    line-height: 16px;
+    width: 85px;
+    padding-left: 6px;
+    background: #fff;
+    border:1px #ccc solid;
+}
+
+#search_btn >button:hover,
+#pager > div >button:hover
+{
+    background: #031F8D;
+    color: #fff;
+}
+
+#content_table{
+    margin-top:10px;
+}
+
+#table1{
+    background: #031F8D;
+    color:#fff;
+}
+
+#pager{
+    padding-right: 10px;
+}
+
+#pager > p{
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+#pager > p > span{
+    font-weight: bolder;
+    color: #031F8D;
+    font-size:16px;
+}
+

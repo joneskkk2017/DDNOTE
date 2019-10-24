@@ -1,0 +1,17 @@
+
+qsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(·–Ø“øÿÿÿÿ8àçÁ°ß-
+?squid:S1643G"Use a StringBuilder instead.(ë¡ÿ³úÿÿÿÿ8ÍÁÁ°ß-
+ksquid:S4488:"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ø¾¸’ùÿÿÿÿ8ÍÁÁ°ß-
+gsquid:S4488…"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(éÔÅĞ8ÍÁÁ°ß-
+”squid:S1192]"qDefine a constant instead of duplicating this literal "                    <div class=\"form-group\">\n" 3 times.(¬¶²÷øÿÿÿÿ8ÍÁÁ°ß-
+\squid:S1155D">Use isEmpty() to check whether the collection is empty or not.(Å³•Ø8ÍÁÁ°ß-
+ksquid:S1192["HDefine a constant instead of duplicating this literal "\" />\n" 3 times.(­ÈŒìıÿÿÿÿ8ÍÁÁ°ß-
+squid:S1192/"aDefine a constant instead of duplicating this literal "redirect:/admin/roleManager.html" 3 times.(•Ì®á8ÍÁÁ°ß-
+[
+squid:S106<"9Replace this use of System.out or System.err by a logger.(İÒğöüÿÿÿÿ8ÍÁÁ°ß-
+?squid:S1643N"Use a StringBuilder instead.(Ä‰æäüÿÿÿÿ8ÍÁÁ°ß-
+osquid:S1192G"LDefine a constant instead of duplicating this literal "</option>\n" 3 times.(ë¡ÿ³úÿÿÿÿ8ÍÁÁ°ß-
+msquid:S4488y"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(ºç¬üÿÿÿÿ8ÍÁÁ°ß-
+?squid:S1643I"Use a StringBuilder instead.(ÏÀºêøÿÿÿÿ8ÍÁÁ°ß-
+€squid:S1192\"]Define a constant instead of duplicating this literal "                    </div>\n" 4 times.(ÆŒ©£ùÿÿÿÿ8ÍÁÁ°ß-
+asquid:S3752%">Add a "method" parameter to this "@RequestMapping" annotation.(¸È«ùÿÿÿÿ8ÍÁÁ°ß-

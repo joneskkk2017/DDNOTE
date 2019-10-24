@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace为BaseDao.java的全类名-->
+<mapper namespace="com.jones.dao.BaseDao">
+    <!-- 增 -->
+    <insert id="add">
+        insert into ${tableName} values
+        <foreach collection="objects" item="param" open="(" separator="," close=")">
+            #{param}
+        </foreach>
+    </insert>
+    <insert id="addForNotMatch">
+        insert into ${tableName}
+        <foreach collection="fieldNames" item="param" open="(" separator="," close=")">
+            ${param}
+        </foreach>
+        values
+        <foreach collection="fieldValues" item="param" open="(" separator="," close=")">
+            #{param}
+        </foreach>
+    </insert>
+    <!-- 删 -->
+    <delete id="delete">
+        delete from ${tableName} where id=#{id}
+    </delete>
+    <!-- 改 -->
+    <update id="update">
+        update ${tableName}
+        <set>
+            <foreach collection="objects" item="param">
+                ${param},
+            </foreach>
+        </set>
+        where id=#{id}
+    </update>
+    <!-- 查单个 -->
+    <select id="selectOne" resultType="map">
+        select * from ${tableName} where id=#{id}
+    </select>
+    <!-- 查多个-->
+    <select id="selectAll" resultType="map">
+        select * from ${tableName}
+    </select>
+</mapper>

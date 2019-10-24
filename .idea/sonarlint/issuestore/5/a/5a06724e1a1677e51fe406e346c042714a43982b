@@ -1,0 +1,8 @@
+
+fsquid:S4488W"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ÌŞ•Ç8âöŸ°ß-
+fsquid:S4488."HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ú‰ïñ8âöŸ°ß-
+qsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(şœéÌıÿÿÿÿ8âöŸ°ß-
+„squid:S1192#"aDefine a constant instead of duplicating this literal "redirect:/admin/deptManager.html" 3 times.(Ÿ“’‘ûÿÿÿÿ8âöŸ°ß-
+hsquid:S4488K"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(µşÕõ8âöŸ°ß-
+asquid:S3752">Add a "method" parameter to this "@RequestMapping" annotation.(Û¬–´ıÿÿÿÿ8âöŸ°ß-
+Ásquid:S1598"This file "deptController.java" should be located in "com\jones\c" directory, not in "C:\Users\JoNeS\IdeaProjects\DDNOTE\src\main\java\com\jones\controller".(½óĞşÿÿÿÿ8‘› °ß-

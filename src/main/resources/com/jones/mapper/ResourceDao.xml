@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace为BaseDao.java的全类名-->
+<mapper namespace="com.jones.dao.ResourceDao">
+    <delete id="delResourceRes">
+        delete from t_role_resource
+        where resid=#{id}
+    </delete>
+    <select id="selectCountResByPath" resultType="java.lang.Integer">
+        select count(id)
+        from t_resource
+        where path=#{path}
+    </select>
+    <select id="selectAllReses" resultType="com.jones.model.Resource">
+        select id,pathname,path
+        from t_resource
+    </select>
+    <select id="selectRoleResById" resultType="com.jones.model.Resource">
+        select res.id,res.pathname,res.path
+        from t_resource res,t_role_resource rr
+        where rr.resid=res.id
+        and rr.rid=#{rid}
+    </select>
+</mapper>

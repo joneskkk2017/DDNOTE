@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace为BaseDao.java的全类名-->
+<mapper namespace="com.jones.dao.AreaDao">
+
+    <delete id="delAreaUserRes">
+        delete from t_user_area
+        where areaid=#{id}
+    </delete>
+    <select id="selectAllByPage" resultType="com.jones.model.Area">
+        select *
+        from t_area
+    </select>
+    <select id="selectAllBysort" resultType="com.jones.model.Area">
+        select * from t_area order by areasort asc
+    </select>
+</mapper>

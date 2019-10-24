@@ -1,0 +1,38 @@
+
+osquid:S1192O"QDefine a constant instead of duplicating this literal "<option value=\"" 6 times.(şôæƒ8ĞÃ°ß-
+?squid:S1643^"Use a StringBuilder instead.(á‡Óãùÿÿÿÿ8ĞÃ°ß-
+?squid:S1643M"Use a StringBuilder instead.(¢ÿ¶Ìşÿÿÿÿ8ĞÃ°ß-
+?squid:S1643e"Use a StringBuilder instead.(—ğ¢Èøÿÿÿÿ8ĞÃ°ß-
+lsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Éé€Ö8“İÃ°ß-
+asquid:S1155J">Use isEmpty() to check whether the collection is empty or not.(ÏÓÉìÿÿÿÿÿ8ĞÃ°ß-
+]squid:S3752—">Add a "method" parameter to this "@RequestMapping" annotation.(ÇĞŠ·8ĞÃ°ß-
+9squid:S1643u"Use a StringBuilder instead.(¢¤£"8ĞÃ°ß-
+squid:S11927"aDefine a constant instead of duplicating this literal "redirect:/admin/userManager.html" 3 times.(Ì×á²8ĞÃ°ß-
+}squid:S1192M"ZDefine a constant instead of duplicating this literal "<option selected value=\"" 3 times.(¢ÿ¶Ìşÿÿÿÿ8ĞÃ°ß-
+isquid:S4488²"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(©ØÕ¾8ĞÃ°ß-
+gsquid:S4488¾"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(Ÿ’½ÿ8ĞÃ°ß-
+W
+squid:S106‡"9Replace this use of System.out or System.err by a logger.(â¬Ó“8ĞÃ°ß-
+osquid:CommentedOutCodeLineé"<This block of commented-out lines of code should be removed.(ê§¬ÿÿÿÿÿ8ĞÃ°ß-
+jsquid:CommentedOutCodeLineí"<This block of commented-out lines of code should be removed.(çÀ¼î8ĞÃ°ß-
+•squid:S1192…"qDefine a constant instead of duplicating this literal "                    <div class=\"form-group\">\n" 5 times.(¬¶²÷øÿÿÿÿ8ĞÃ°ß-
+W
+squid:S106ø"9Replace this use of System.out or System.err by a logger.(Â­šÍ8ĞÃ°ß-
+W
+squid:S106Š"9Replace this use of System.out or System.err by a logger.(Ø¼¢ƒ8ĞÃ°ß-
+jsquid:CommentedOutCodeLineñ"<This block of commented-out lines of code should be removed.(ú·ÒÆ8ĞÃ°ß-
+hsquid:S44882"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(Õ„˜ 8ĞÃ°ß-
+isquid:S4488å"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(İ®Šú8ĞÃ°ß-
+]squid:S3752ı">Add a "method" parameter to this "@RequestMapping" annotation.(“Ò‘÷8ĞÃ°ß-
+9squid:S1643p"Use a StringBuilder instead.(¢¤£"8ĞÃ°ß-
+squid:S1192„"]Define a constant instead of duplicating this literal "                    </div>\n" 6 times.(ÆŒ©£ùÿÿÿÿ8ĞÃ°ß-
+:squid:S1643T"Use a StringBuilder instead.(şôæƒ8ĞÃ°ß-
+ƒsquid:S1192‘"dDefine a constant instead of duplicating this literal "                        </select>\n" 3 times.(ßÎ°Ğ8ĞÃ°ß-
+ksquid:S4488A"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(Éç¸›ùÿÿÿÿ8ĞÃ°ß-
+:squid:S1643O"Use a StringBuilder instead.(şôæƒ8ĞÃ°ß-
+gsquid:S1192ƒ"HDefine a constant instead of duplicating this literal "\" />\n" 3 times.(•é…É8ĞÃ°ß-
+nsquid:S4488Î"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(õàµ«şÿÿÿÿ8ĞÃ°ß-
+osquid:S1192M"LDefine a constant instead of duplicating this literal "</option>\n" 9 times.(¢ÿ¶Ìşÿÿÿÿ8ĞÃ°ß-
+?squid:S1643`"Use a StringBuilder instead.(—ğ¢Èøÿÿÿÿ8ĞÃ°ß-
+usquid:S3776B"RRefactor this method to reduce its Cognitive Complexity from 30 to the 15 allowed.(»œ£…ÿÿÿÿÿ8ĞÃ°ß-
+?squid:S1643n"Use a StringBuilder instead.(ò ÙÁÿÿÿÿÿ8ĞÃ°ß-

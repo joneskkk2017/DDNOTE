@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace为BaseDao.java的全类名-->
+<mapper namespace="com.jones.dao.RoleDao">
+    <delete id="delRoleRes">
+        delete from t_role_resource
+        where rid=#{id}
+    </delete>
+    <delete id="delRoleUser">
+        delete from  t_user_role
+        where rid=#{id}
+    </delete>
+    <delete id="delRoleResource">
+        delete from t_role_resource
+        where rid=#{id}
+    </delete>
+    <select id="selectAllRoles" resultMap="RoleRelRes">
+        select id,name,code,idpath
+        from t_role
+    </select>
+    <select id="selectRoleRes" resultType="com.jones.model.Resource">
+        select res.id,res.pathname,res.path
+        from t_resource res,t_role_resource rr
+        where rr.resid=res.id
+        and rr.rid = #{id}
+    </select>
+    <select id="getRoleByName" resultType="com.jones.model.Role">
+        select id,name,code,idpath
+        from t_role
+        where
+            name=#{name}
+    </select>
+    <select id="selectRoleResById" resultMap="RoleRelRes">
+        select id,name,code,idpath
+        from t_role
+        where
+        id=#{id}
+    </select>
+    <select id="getRoleByuid" resultType="java.lang.String">
+        select r.code from t_role r,t_user_role ur where ur.rid=r.id and ur.uid=#{id}
+    </select>
+
+    <resultMap id="RoleRelRes" type="com.jones.model.Role">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="code" property="code" />
+        <result column="idpath" property="idpath" />
+        <collection property="resources" select="com.jones.dao.RoleDao.selectRoleRes" column="id"/>
+    </resultMap>
+</mapper>
